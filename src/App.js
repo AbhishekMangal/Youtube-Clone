@@ -1,9 +1,25 @@
-import React from "react";
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home'
+import Search from './Pages/Search'
+import Watch from './Pages/Watch'
+import PageNOtFound from './Pages/PageNOtFound'
+import Navbar from './Components/Navbar'
 
-function App() {
+export default function App() {
   return (
-   <h1 className='text-3xl font-bold underline'>Hellow World!</h1>
-  );
+    <div>
+      
+      <BrowserRouter>
+    
+        <Routes>
+          
+          <Route path ="/" element={<Home/>} />       
+          <Route path ="/search" element={<Search/>} />       
+          <Route path ="/watch/:id" element={<Watch/>} />       
+          <Route path ="*" element={<PageNOtFound/>} />       
+           </Routes>
+      </BrowserRouter>
+    </div>
+  )
 }
-
-export default App;
