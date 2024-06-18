@@ -21,10 +21,10 @@ const Navbar = () => {
         </div>
         <div className="flex items-center justify-center gap-s">
           <form action="">
-            <div className="flex bg-zinc-900 items-center px-4 pr-0 rounded-full">
+            <div className="flex items-center px-4 pr-0 rounded-full">
               <div className="flex gap-4 items-center pr-5 ">
                 <div><AiOutlineSearch className='text-xl'/></div>
-              <input type="search" placeholder="Search" className="w-96 bg-zinc-900 focus:outline-none border-none justify-center rounded"/>
+              <input type="search" placeholder="Search" className="w-96 focus:outline-none border-none justify-center rounded"/>
            
               <AiOutlineClose className='text-xl cursor-pointer'/>
               </div>
